@@ -1,27 +1,39 @@
-/*!********************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/style/styles.scss ***!
-  \********************************************************************************************************************************************/
+/*!****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style/styles.scss ***!
+  \****************************************************************************************************************/
 body {
   box-sizing: border-box;
-  background-color: rgb(34, 223, 223);
+  font-family: Helvetica, sans-serif;
+  font-size: 24px;
+  background-color: #f27f3d;
 }
-body .DYKuMrVwYcyZTTQnkswg {
+body .container {
   width: 1200px;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
-body .YbWO7hbk2P_7DHYGKQhs {
-  width: 100px;
+body .section-left {
+  width: 150px;
+  background-color: #2d4b73;
+  color: #d97eb0;
 }
-body .xoeHLHgfUiZsbULw0nMI {
-  width: 1100px;
+body #posts,
+body #favorite-btn {
+  background-color: #d97eb0;
+  border: none;
+  border-radius: 50px;
+  color: #f2e8df;
+  margin: 24px;
+  width: 70px;
+  height: 40px;
 }
-body #t8zy2hBml5LtoAA2ibRZ {
-  background-color: rgba(100, 121, 36, 0.905);
-  color: brown;
+body .section-right {
+  width: 1050px;
+  background-color: #f2ab27;
+  color: #2d4b73;
 }
-body #q07cWTLSo1LwJREmNAed {
-  background-color: rgba(121, 91, 36, 0.905);
-  color: brown;
+body .btn-favorite-heart {
+  stroke: rgb(0, 0, 0);
+  transition: fill 0.3s ease;
+  fill: none;
+  background-color: #f2e8df;
 }

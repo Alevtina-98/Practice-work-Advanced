@@ -1,32 +1,65 @@
-$background-color: rgb(34, 223, 223);
-$back-color-btn1: rgba(100, 121, 36, 0.905);
-$color-btn: brown;
-$back-color-btn2: rgba(121, 91, 36, 0.905);
+// start body-container
+
+$font-stack: Helvetica, sans-serif;
+$font-size: 24px;
+$back-color-body: #f27f3d;
+
+// end body-container
+
+// start left-section
+$background-color-left: #2d4b73;
+$back-color-btn-left: #d97eb0;
+$color-left: #f2e8df;
+$border: none;
+$border-radius: 50px;
+$margins: 24px;
+
+// end left-section
+
+// start right-section
+
+$background-color-right: #f2ab27;
+$color-right: #2d4b73;
+// $padding-left: 14px;
+
+// end right-section
 
 body {
   box-sizing: border-box;
-  background-color: $background-color;
+  font-family: $font-stack;
+  font-size: $font-size;
+  background-color: $back-color-body;
 
   .container {
     width: 1200px;
     display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .section-left {
-    width: 100px;
+    width: 150px;
+    background-color: $background-color-left;
+    color: $back-color-btn-left;
   }
-  #posts {
-    background-color: $back-color-btn1;
-    color: $color-btn;
-  }
+  #posts,
   #favorite-btn {
-    background-color: $back-color-btn2;
-    color: $color-btn;
+    background-color: $back-color-btn-left;
+    border: $border;
+    border-radius: $border-radius;
+    color: $color-left;
+    margin: $margins;
+    width: 70px;
+    height: 40px;
   }
 
   .section-right {
-    width: 1100px;
+    width: 1050px;
+    background-color: $background-color-right;
+    color: $color-right;
+  }
+  .btn-favorite-heart {
+    stroke: rgb(0, 0, 0);
+    transition: fill 0.3s ease;
+    fill: none;
+    background-color: $color-left;
   }
 }
